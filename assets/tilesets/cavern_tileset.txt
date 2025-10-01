@@ -1,0 +1,8 @@
+Este tileset deve representar um ambiente de caverna natural e misterioso.
+
+- **Plataformas:** Lajes de pedra, bordas de cristal, pontes de cogumelos gigantes.
+- **Paredes:** Paredes de pedra bruta, formações de cristal, raízes de árvores antigas.
+- **Decorações:** Estalactites e estalagmites, cristais brilhantes, cogumelos bioluminescentes, poças de água, fósseis.
+- **Perigos:** Espinhos de cristal, poças ácidas, flora perigosa.
+
+A paleta de cores deve ser terrosa, com toques de cores vibrantes dos cristais e da flora bioluminescente. A atmosfera deve ser úmida e misteriosa.

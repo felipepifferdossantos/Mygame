@@ -1,0 +1,12 @@
+[gd_resource type="ConsumableItem" load_steps=2 format=3 uid="uid://dghqwe78123d"]
+
+[ext_resource type="Script" path="res://items/consumable.gd" id="1_consumable"]
+
+[resource]
+script = ExtResource("1_consumable")
+item_name = "Health Potion"
+item_description = "A potion that restores 20 health points."
+stackable = true
+max_stack_size = 10
+effect_type = 0 # HEAL
+effect_magnitude = 20.0

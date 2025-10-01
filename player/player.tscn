@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://b5wugvhn8l3g8"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_xec2k"]
+[ext_resource type="Script" path="res://player/inventory.gd" id="2_inventory_script"]
+[ext_resource type="PackedScene" uid="uid://c7r8s9t0u1v2w" path="res://ui/inventory/inventory_ui.tscn" id="3_inventory_ui"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pdk1s"]
+radius = 8.0
+height = 20.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_abcde"]
+size = Vector2(14, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_furious"]
+size = Vector2(20, 26)
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 1
+script = ExtResource("1_xec2k")
+groups = ["player"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+# Placeholder for player sprite
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_pdk1s")
+
+[node name="AttackHitbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitbox"]
+position = Vector2(15, 0)
+shape = SubResource("RectangleShape2D_abcde")
+disabled = true
+
+[node name="FuriousStrikeHitbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FuriousStrikeHitbox"]
+position = Vector2(18, 0)
+shape = SubResource("RectangleShape2D_furious")
+disabled = true
+
+[node name="Inventory" type="Node" parent="."]
+script = ExtResource("2_inventory_script")
+
+[node name="InventoryUI" parent="." instance=ExtResource("3_inventory_ui")]
+inventory = NodePath("../Inventory")
+
+[connection signal="body_entered" from="AttackHitbox" to="." method="_on_attack_hitbox_body_entered"]
+[connection signal="body_entered" from="FuriousStrikeHitbox" to="." method="_on_furious_strike_hitbox_body_entered"]

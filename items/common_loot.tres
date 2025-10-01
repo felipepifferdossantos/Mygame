@@ -1,0 +1,25 @@
+[gd_resource type="LootTable" load_steps=5 format=3 uid="uid://loottablecommon"]
+
+[ext_resource type="Script" path="res://items/loot_table.gd" id="1_loottable"]
+[ext_resource type="Resource" uid="uid://scrap12345" path="res://items/scrap_metal.tres" id="2_scrap"]
+[ext_resource type="Resource" uid="uid://chemcomp54321" path="res://items/chemical_components.tres" id="3_chem"]
+[ext_resource type="Resource" uid="uid://dghqwe78123d" path="res://items/health_potion.tres" id="4_potion"]
+
+[sub_resource type="Resource" id="LootDrop_1"]
+script = ExtResource("1_loottable").LootDrop
+item = ExtResource("2_scrap")
+weight = 10.0
+
+[sub_resource type="Resource" id="LootDrop_2"]
+script = ExtResource("1_loottable").LootDrop
+item = ExtResource("3_chem")
+weight = 5.0
+
+[sub_resource type="Resource" id="LootDrop_3"]
+script = ExtResource("1_loottable").LootDrop
+item = ExtResource("4_potion")
+weight = 2.0
+
+[resource]
+script = ExtResource("1_loottable")
+drops = [SubResource("LootDrop_1"), SubResource("LootDrop_2"), SubResource("LootDrop_3")]

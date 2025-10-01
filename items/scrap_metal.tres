@@ -1,0 +1,10 @@
+[gd_resource type="ItemResource" load_steps=2 format=3 uid="uid://scrap12345"]
+
+[ext_resource type="Script" path="res://items/item_resource.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+item_name = "Scrap Metal"
+item_description = "A piece of twisted, rusty metal. Might be useful for crafting."
+stackable = true
+max_stack_size = 50

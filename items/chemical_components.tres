@@ -1,0 +1,10 @@
+[gd_resource type="ItemResource" load_steps=2 format=3 uid="uid://chemcomp54321"]
+
+[ext_resource type="Script" path="res://items/item_resource.gd" id="1_item"]
+
+[resource]
+script = ExtResource("1_item")
+item_name = "Chemical Components"
+item_description = "Volatile chemicals in a cracked vial. Handle with care."
+stackable = true
+max_stack_size = 20

@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://mobscene123"]
+
+[ext_resource type="Script" path="res://enemy/mob.gd" id="1_mob_script"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mob"]
+size = Vector2(20, 20)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hurtbox"]
+radius = 25.0
+
+[node name="Mob" type="CharacterBody2D"]
+collision_layer = 2 # Para ser atingido pelo ataque do jogador
+collision_mask = 0
+script = ExtResource("1_mob_script")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+# Placeholder sprite - um quadrado cinza para o autômato
+modulate = Color(0.5, 0.5, 0.5, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mob")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 1 # Detecta o jogador na camada 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CircleShape2D_hurtbox")
+
+[connection signal="body_entered" from="Hurtbox" to="." method="_on_hurtbox_body_entered"]
+[connection signal="body_exited" from="Hurtbox" to="." method="_on_hurtbox_body_exited"]

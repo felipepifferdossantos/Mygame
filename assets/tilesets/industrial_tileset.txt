@@ -1,0 +1,8 @@
+Este tileset deve conter elementos de um ambiente industrial sombrio.
+
+- **Plataformas:** Vigas de metal enferrujadas, grades de piso, concreto rachado.
+- **Paredes:** Paredes de tijolos escuros, metal corrugado, concreto com canos expostos.
+- **Decorações:** Canos enferrujados, engrenagens, correntes, ventiladores industriais, caixas e barris.
+- **Perigos:** Pisos eletrificados, poças de lixo tóxico, espinhos de metal.
+
+A paleta de cores deve ser escura e sombria, com tons de cinza, marrom, ferrugem e verdes escuros. A iluminação deve ser dramática, sugerindo luzes de emergência ou holofotes.

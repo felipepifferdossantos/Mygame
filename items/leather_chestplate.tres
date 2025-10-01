@@ -1,0 +1,11 @@
+[gd_resource type="ArmorItem" load_steps=2 format=3 uid="uid://qwerty98765z"]
+
+[ext_resource type="Script" path="res://items/armor.gd" id="1_armor"]
+
+[resource]
+script = ExtResource("1_armor")
+item_name = "Leather Chestplate"
+item_description = "A sturdy piece of leather armor."
+stackable = false
+armor_type = 1 # CHESTPLATE
+defense = 8.0

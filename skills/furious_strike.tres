@@ -1,0 +1,10 @@
+[gd_resource type="FuriousStrikeSkill" load_steps=2 format=3 uid="uid://furiousstrike123"]
+
+[ext_resource type="Script" path="res://skills/furious_strike_skill.gd" id="1_furious_strike"]
+
+[resource]
+script = ExtResource("1_furious_strike")
+skill_name = "Golpe Furioso"
+skill_description = "Um ataque rápido e poderoso que consome Vontade para causar dano extra."
+resource_type = 0 # WILL
+cost = 5

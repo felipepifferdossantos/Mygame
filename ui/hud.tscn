@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://hudscene123"]
+
+[ext_resource type="Script" path="res://ui/hud.gd" id="1_hud_script"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud_script")
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 220.0
+offset_bottom = 40.0
+value = 100.0
+nine_patch_stretch = true
+texture_under = null
+texture_progress = null
+
+[node name="WillBar" type="TextureProgressBar" parent="."]
+offset_left = 20.0
+offset_top = 45.0
+offset_right = 180.0
+offset_bottom = 60.0
+value = 50.0
+nine_patch_stretch = true
+texture_under = null
+texture_progress = null
+
+[node name="LogicBar" type="TextureProgressBar" parent="."]
+offset_left = 20.0
+offset_top = 65.0
+offset_right = 180.0
+offset_bottom = 80.0
+value = 50.0
+nine_patch_stretch = true
+texture_under = null
+texture_progress = null

@@ -1,0 +1,8 @@
+Este tileset deve evocar uma floresta antiga e exuberante, com um toque de mistério.
+
+- **Plataformas:** Chão de terra coberto de musgo, galhos de árvores grossos, plataformas de pedra cobertas de vinhas.
+- **Paredes:** Troncos de árvores enormes, paredes de rocha cobertas de musgo, densa folhagem de fundo.
+- **Decorações:** Arbustos, flores, cogumelos, vinhas, raízes expostas, pedras antigas com runas.
+- **Elementos de Fundo:** Árvores distantes, montanhas, talvez ruínas antigas visíveis através das árvores.
+
+A paleta de cores deve ser rica em verdes e marrons, com toques de cor das flores. A iluminação deve ser suave, como a luz do sol filtrada pelas copas das árvores.

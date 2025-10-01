@@ -1,0 +1,10 @@
+[gd_resource type="CurrencyItem" load_steps=2 format=3 uid="uid://zxcvb65432n"]
+
+[ext_resource type="Script" path="res://items/currency.gd" id="1_currency"]
+
+[resource]
+script = ExtResource("1_currency")
+item_name = "Gold Coin"
+item_description = "A shiny gold coin."
+stackable = true
+max_stack_size = 9999

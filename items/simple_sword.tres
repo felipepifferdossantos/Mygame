@@ -1,0 +1,12 @@
+[gd_resource type="WeaponItem" load_steps=2 format=3 uid="uid://asdfg12345h"]
+
+[ext_resource type="Script" path="res://items/weapon.gd" id="1_weapon"]
+
+[resource]
+script = ExtResource("1_weapon")
+item_name = "Simple Sword"
+item_description = "A basic, but reliable sword."
+stackable = false
+weapon_type = 0 # SWORD
+damage = 12.0
+attack_speed = 1.2
